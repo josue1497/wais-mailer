@@ -3,6 +3,7 @@ phases:
  install:
    runtime-versions:
      docker: 18
+     nodejs: 14
  pre_build:
    commands:
      - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
